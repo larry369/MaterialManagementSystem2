@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B3FC4F29-FE3E-48D4-B84E-7406D3201CEF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MaterialManagementSystem</RootNamespace>
+    <AssemblyName>MaterialManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CheckList.cs" />
+    <Compile Include="CheckListUtility.cs" />
+    <Compile Include="Element.cs" />
+    <Compile Include="ElementUtility.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialManagementSystemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MaterialManagementSystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialManagementSystemDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MaterialManagementSystemDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialManagementSystemDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MaterialManagementSystemDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialManagementSystemDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MaterialManagementSystemDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialManagementSystemDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MaterialManagementSystemDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialManagementSystemDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MaterialManagementSystemDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Supplier.cs" />
+    <Compile Include="SupplierElements.cs" />
+    <Compile Include="SupplierUtility.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="MaterialManagementSystemDataSet.xsc">
+      <DependentUpon>MaterialManagementSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MaterialManagementSystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MaterialManagementSystemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MaterialManagementSystemDataSet.xss">
+      <DependentUpon>MaterialManagementSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MaterialManagementSystemDataSet1.xsc">
+      <DependentUpon>MaterialManagementSystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MaterialManagementSystemDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MaterialManagementSystemDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MaterialManagementSystemDataSet1.xss">
+      <DependentUpon>MaterialManagementSystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MaterialManagementSystemDataSet2.xsc">
+      <DependentUpon>MaterialManagementSystemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="MaterialManagementSystemDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MaterialManagementSystemDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MaterialManagementSystemDataSet2.xss">
+      <DependentUpon>MaterialManagementSystemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="MaterialManagementSystemDataSet3.xsc">
+      <DependentUpon>MaterialManagementSystemDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="MaterialManagementSystemDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MaterialManagementSystemDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MaterialManagementSystemDataSet3.xss">
+      <DependentUpon>MaterialManagementSystemDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="MaterialManagementSystemDataSet4.xsc">
+      <DependentUpon>MaterialManagementSystemDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="MaterialManagementSystemDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MaterialManagementSystemDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MaterialManagementSystemDataSet4.xss">
+      <DependentUpon>MaterialManagementSystemDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="MaterialManagementSystemDataSet5.xsc">
+      <DependentUpon>MaterialManagementSystemDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="MaterialManagementSystemDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MaterialManagementSystemDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MaterialManagementSystemDataSet5.xss">
+      <DependentUpon>MaterialManagementSystemDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="img\prodPhoto\AlienWare-17-R2-B-570x570.jpg" />
+    <Content Include="img\prodPhoto\AlienWare_17_R2_B_570x570.jpg" />
+    <Content Include="img\prodPhoto\AMD-CPU.jpg" />
+    <Content Include="img\prodPhoto\GPU_AMD.jpg" />
+    <Content Include="img\prodPhoto\GPU_N18E_G0.jpg" />
+    <Content Include="img\prodPhoto\INTEL_CPU_I9-9900K_QQPP_3.60GHZ.png" />
+    <Content Include="img\prodPhoto\samsung DDR.PNG" />
+    <Content Include="img\prodPhoto\Shin_Etsu_Grease.png" />
+    <Content Include="img\prodPhoto\ssdsamsung1t.jpg" />
+    <Content Include="img\prodPhoto\SSDSAMSUNG1TB.jpg" />
+    <Content Include="img\prodPhoto\ssdtoshiba256g.jpg" />
+    <Content Include="img\prodPhoto\THERMAL.jpg" />
+    <Content Include="img\protek3.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
