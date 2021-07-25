@@ -59,9 +59,11 @@ namespace MaterialManagementSystem
         }
         public static List<Element> SearchElementsByKW(string keyword)
         {
-            SqlDataAdapter da = new SqlDataAdapter("Select * From Elements Where Component Like '%'+@Component+'%'", cnStr);
+            SqlDataAdapter da = new SqlDataAdapter("Select * From Elements Where Component Like '%'+@Component+'%' OR Supplier Like '%'+@Supplier+'%' OR Config Like '%'+@Config+'%' OR MS_ID Like '%'+@MS_ID+'%'", cnStr);
             da.SelectCommand.Parameters.AddWithValue("@Component", keyword);
-
+            da.SelectCommand.Parameters.AddWithValue("@Supplier", keyword);
+            da.SelectCommand.Parameters.AddWithValue("@Config", keyword);
+            da.SelectCommand.Parameters.AddWithValue("@MS_ID", keyword);
             DataTable dt = new DataTable();
             da.Fill(dt);
             var query = from row in dt.AsEnumerable()

@@ -85,5 +85,19 @@ namespace MaterialManagementSystem
             cmd.ExecuteNonQuery();
             cn.Close();
         }
+        public static void InsertSupplier(Supplier sup)
+        {
+            SqlConnection cn = new SqlConnection(cnStr);
+            SqlCommand cmd = new SqlCommand("Insert Into Suppliers(CompanyName, Address, Contact, DirectTelephone, Email, Dateofcooperation)Values(@CompanyName, @Address, @Contact, @DirectTelephone, @Email, @Dateofcooperation)", cn);
+            cmd.Parameters.AddWithValue("@CompanyName", sup.CompanyName);
+            cmd.Parameters.AddWithValue("@Address", sup.Address);
+            cmd.Parameters.AddWithValue("@Contact", sup.Contact);
+            cmd.Parameters.AddWithValue("@DirectTelephone", sup.DirectTelephone);
+            cmd.Parameters.AddWithValue("@Email", sup.Email);
+            cmd.Parameters.AddWithValue("@Dateofcooperation", sup.Dateofcooperation);
+            cn.Open();
+            cmd.ExecuteNonQuery();
+            cn.Close();
+        }
     }
 }

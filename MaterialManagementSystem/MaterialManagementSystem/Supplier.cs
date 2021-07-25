@@ -14,6 +14,7 @@ namespace MaterialManagementSystem
         public string Contact { get; set; }
         public string DirectTelephone { get; set; }
         public string Email { get; set; }
+        public DateTime Dateofcooperation { get; set; }
 
     }
 }

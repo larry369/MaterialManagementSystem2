@@ -18,3 +18,4 @@ D:\Larrys file\programing\WindowsForm\MaterialManagementSystem2\MaterialManageme
 D:\Larrys file\programing\WindowsForm\MaterialManagementSystem2\MaterialManagementSystem\MaterialManagementSystem\obj\Debug\MaterialManagementSystem.csproj.CoreCompileInputs.cache
 D:\Larrys file\programing\WindowsForm\MaterialManagementSystem2\MaterialManagementSystem\MaterialManagementSystem\obj\Debug\MaterialManagementSystem.exe
 D:\Larrys file\programing\WindowsForm\MaterialManagementSystem2\MaterialManagementSystem\MaterialManagementSystem\obj\Debug\MaterialManagementSystem.pdb
+D:\Larrys file\programing\WindowsForm\MaterialManagementSystem2\MaterialManagementSystem\MaterialManagementSystem\obj\Debug\MaterialManagementSystem.LoginForm.resources
