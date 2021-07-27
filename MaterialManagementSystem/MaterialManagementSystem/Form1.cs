@@ -66,6 +66,7 @@ namespace MaterialManagementSystem
             SearchmaterialsMenu_btn.BackColor = Color.White;
             CheckID_txt.Text = CheckListUtility.SentNewCheckIDBack().ToString();
             newEmpName_txt.Text = LoginInfo.Name;
+            newOldMSID_txt.Text = "0";//請購料件，料件編號預設為0，代表新料件
 
 
         }
@@ -665,9 +666,27 @@ namespace MaterialManagementSystem
 
             }
         }
+        /// <summary>
+        /// 請購料件-清空TextBox所有資料
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void newClearAll_btn_Click(object sender, EventArgs e)
+        {
+            newOldMSID_txt.Text = "0";
+            newSupplier_cbx.Text = "";
+            newelement_cbx.Text = "";
+            newConfig_txt.Text = "";
+            newDescription_txt.Text = "";
+            newPicture_lab.Text = "";
+            newQty_txt.Text = "";
+            newPerPrice_txt.Text = "";
+            newTax_txt.Text = "";
+            newTotalPrice_txt.Text = "";
+        }
 
         /// <summary>
-        /// 送審
+        /// 請購料件-送審按鈕
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -715,7 +734,7 @@ namespace MaterialManagementSystem
         }
 
         /// <summary>
-        /// 送審中dataGridview4
+        /// 請購料件-審核列表dataGridview4
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -751,7 +770,11 @@ namespace MaterialManagementSystem
 
             }
         }
-
+        /// <summary>
+        /// 請購料件-收回審核按鈕
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void checkback_btn_Click(object sender, EventArgs e)
         {
             int ckid = Convert.ToInt32(checkback_lab.Text);
@@ -766,7 +789,11 @@ namespace MaterialManagementSystem
 
 
         }
-
+        /// <summary>
+        /// 請購料件-選擇圖片
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void newChosePic_btn_Click(object sender, EventArgs e)
         {
             if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
@@ -1083,5 +1110,7 @@ namespace MaterialManagementSystem
                 MessageBox.Show("尚未輸入欲新增的資料");
             }
         }
+
+
     }
 }
