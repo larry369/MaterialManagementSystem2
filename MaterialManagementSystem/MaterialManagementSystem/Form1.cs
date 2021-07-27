@@ -673,36 +673,45 @@ namespace MaterialManagementSystem
         /// <param name="e"></param>
         private void SenttoCheck_btn_Click(object sender, EventArgs e)
         {
-            CheckList clist = new CheckList()
+            try
             {
-                MS_ID = Convert.ToInt32(newOldMSID_txt.Text),
-                Supplier = newSupplier_cbx.Text,
-                Component = newelement_cbx.Text,
-                Config = newConfig_txt.Text,
-                Description = newDescription_txt.Text,
-                Picture = newPicture_lab.Text,
-                Qty = Convert.ToInt32(newQty_txt.Text),
-                Price = Convert.ToInt32(newTotalPrice_txt.Text),
-                CheckResult = "審核中",
-                EmployeeName = newEmpName_txt.Text,
-                SentCheckTime = DateTime.Now
-            };
-            CheckListUtility.CheckListAdd(clist);
-            newOldMSID_txt.Text = "";
-            newSupplier_cbx.Text = "";
-            newelement_cbx.Text = "";
-            newConfig_txt.Text = "";
-            newDescription_txt.Text = "";
-            newPicture_lab.Text = "";
-            newQty_txt.Text = "";
-            newPerPrice_txt.Text = "";
-            newTax_txt.Text = "";
-            newTotalPrice_txt.Text = "";
-            CheckID_txt.Text = CheckListUtility.SentNewCheckIDBack().ToString();
-            dataGridView4.DataSource = CheckListUtility.GetAllCheckList();
-            dataGridView5.DataSource = CheckListUtility.GetAllCheckList();
-            dataGridView4.Refresh();
+                CheckList clist = new CheckList()
+                {
+                    MS_ID =Convert.ToInt32(newOldMSID_txt.Text),   //不可轉為int 
+                    Supplier = newSupplier_cbx.Text,
+                    Component = newelement_cbx.Text,
+                    Config = newConfig_txt.Text,
+                    Description = newDescription_txt.Text,
+                    Picture = newPicture_lab.Text,
+                    Qty = Convert.ToInt32(newQty_txt.Text),
+                    Price = Convert.ToInt32(newTotalPrice_txt.Text),
+                    CheckResult = "審核中",
+                    EmployeeName = newEmpName_txt.Text,
+                    SentCheckTime = DateTime.Now
+                };
+                CheckListUtility.CheckListAdd(clist);
+                newOldMSID_txt.Text = "0";     
+                newSupplier_cbx.Text = "";
+                newelement_cbx.Text = "";
+                newConfig_txt.Text = "";
+                newDescription_txt.Text = "";
+                newPicture_lab.Text = "";
+                newQty_txt.Text = "";
+                newPerPrice_txt.Text = "";
+                newTax_txt.Text = "";
+                newTotalPrice_txt.Text = "";
+                CheckID_txt.Text = CheckListUtility.SentNewCheckIDBack().ToString();
+                dataGridView4.DataSource = CheckListUtility.GetAllCheckList();
+                dataGridView5.DataSource = CheckListUtility.GetAllCheckList();
+                dataGridView4.Refresh();
 
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
         }
 
         /// <summary>
@@ -855,7 +864,7 @@ namespace MaterialManagementSystem
                 };
                 CheckListUtility.EditCheckList(cklst);
 
-                if (checkMSID_txt.Text != "")
+                if (checkMSID_txt.Text != 0.ToString())//確認審核單號中的ms_ID 是否為0，不為0則代表為舊料件捕貨，更新原有料件
                 {
                     Element elmt1 = new Element()
                     {
@@ -870,7 +879,7 @@ namespace MaterialManagementSystem
                     };
                     CheckListUtility.CheckListUpdateElements(elmt1);
                 }
-                else
+                else//審核單號中的ms_ID為0，則代表為新料件，新增料件至料件清單
                 {
                     Element elmt2 = new Element()
                     {
@@ -883,6 +892,9 @@ namespace MaterialManagementSystem
                         Purchase_date = DateTime.Now,
                         Lasteditdate = DateTime.Now
                     };
+                    CheckListUtility.CheckListInsertElements(elmt2);
+
+
                 }
                 checkCheckID_txt.Text = "";
                 checkMSID_txt.Text = "";
@@ -899,6 +911,7 @@ namespace MaterialManagementSystem
 
 
                 dataGridView5.DataSource = CheckListUtility.GetAllCheckList();
+                dataGridView4.DataSource = CheckListUtility.GetAllCheckList();
                 dataGridView1.DataSource = ElementUtility.GetAllElement();
                 dataGridView1.Refresh();
 
