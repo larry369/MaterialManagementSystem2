@@ -9,14 +9,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Diagnostics;
 
 namespace MaterialManagementSystem
 {
     public partial class Form1 : Form
     {
         string cnStr = Properties.Settings.Default.MaterialManagementSystemConnectionString;
-        string path = @"D:\Larrys file\programing\WindowsForm\MaterialManagementSystem2\MaterialManagementSystem\MaterialManagementSystem\img\prodPhoto\";//圖片位置
-
+        //string path = @"D:\Larrys file\programing\WindowsForm\MaterialManagementSystem2\MaterialManagementSystem\MaterialManagementSystem\img\prodPhoto\";
+        string relativePath = @"img\prodPhoto\";
         public Form1()
         {
             InitializeComponent();
@@ -27,11 +28,11 @@ namespace MaterialManagementSystem
             LoginForm loginForm = new LoginForm();
             loginForm.ShowDialog();
             LoginUserName_lab.Text = LoginInfo.Name;
-            if (LoginUserName_lab.Text=="")
+            if (LoginUserName_lab.Text == "")
             {
                 this.Close();
             }
-            if (LoginInfo.Authority=="一般")
+            if (LoginInfo.Authority == "一般")
             {
                 CheckListPanel_btn.Visible = false;
                 EmployeeManagement_btn.Visible = false;
@@ -121,7 +122,9 @@ namespace MaterialManagementSystem
                     qty_txt.Text = dr[6].ToString();
                     string picstring = dr[5].ToString();
                     pic_lab.Text = dr[5].ToString();
-                    pictureBox2.ImageLocation = path + picstring;
+                    //pictureBox2.ImageLocation = path + picstring;
+
+                    pictureBox2.ImageLocation = Path.Combine(Application.StartupPath, relativePath, picstring);
                     //textBox4.Text = Convert.ToDecimal(dr[3]).ToString();
                     //Hidden_ProductID_lab.Text = dr[0].ToString();
                     //MessageBox.Show(Hidden_ProductID_lab.Text);
@@ -160,7 +163,7 @@ namespace MaterialManagementSystem
         /// <param name="e"></param>
         private void edit_btn_Click(object sender, EventArgs e)
         {
-            if (id_txt.Text!="")
+            if (id_txt.Text != "")
             {
                 if (MessageBox.Show("確定要修改嗎?", "問題", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
@@ -222,7 +225,8 @@ namespace MaterialManagementSystem
                 string selectedFile = Path.GetFileName(openFileDialog1.FileName);//using system.IO;
 
                 pic_lab.Text = selectedFile;
-                pictureBox2.ImageLocation = path + pic_lab.Text;
+                //pictureBox2.ImageLocation = path + pic_lab.Text;
+                pictureBox2.ImageLocation = Path.Combine(Application.StartupPath, relativePath, pic_lab.Text);
             }
         }
         /// <summary>
@@ -251,7 +255,8 @@ namespace MaterialManagementSystem
                 newConfig_txt.Text = config_txt.Text;
                 newDescription_txt.Text = description_txt.Text;
                 newPicture_lab.Text = pic_lab.Text;
-                pictureBox3.ImageLocation = path + newPicture_lab.Text;
+                //pictureBox3.ImageLocation = path + newPicture_lab.Text;
+                pictureBox3.ImageLocation = Path.Combine(Application.StartupPath, relativePath, newPicture_lab.Text);
                 searchpanel.Visible = false;
                 newElementsPanel.Visible = true;
                 //
@@ -396,7 +401,7 @@ namespace MaterialManagementSystem
         {
             if (HideSID2_lab.Text != "")
             {
-                if (textBox6.Text!="")
+                if (textBox6.Text != "")
                 {
                     SupplierElements supelmt = new SupplierElements()
                     {
@@ -696,7 +701,7 @@ namespace MaterialManagementSystem
             {
                 CheckList clist = new CheckList()
                 {
-                    MS_ID =Convert.ToInt32(newOldMSID_txt.Text),   //不可轉為int 
+                    MS_ID = Convert.ToInt32(newOldMSID_txt.Text),   //不可轉為int 
                     Supplier = newSupplier_cbx.Text,
                     Component = newelement_cbx.Text,
                     Config = newConfig_txt.Text,
@@ -709,7 +714,7 @@ namespace MaterialManagementSystem
                     SentCheckTime = DateTime.Now
                 };
                 CheckListUtility.CheckListAdd(clist);
-                newOldMSID_txt.Text = "0";     
+                newOldMSID_txt.Text = "0";
                 newSupplier_cbx.Text = "";
                 newelement_cbx.Text = "";
                 newConfig_txt.Text = "";
@@ -802,7 +807,8 @@ namespace MaterialManagementSystem
                 string selectedFile = Path.GetFileName(openFileDialog1.FileName);//using system.IO;//檔名
 
                 newPicture_lab.Text = selectedFile;
-                pictureBox3.ImageLocation = path + newPicture_lab.Text;
+                //pictureBox3.ImageLocation = path + newPicture_lab.Text;
+                pictureBox3.ImageLocation = Path.Combine(Application.StartupPath, relativePath, newPicture_lab.Text);
             }
         }
 
@@ -859,8 +865,8 @@ namespace MaterialManagementSystem
                     checkResult_txt.Text = dr[8].ToString();
                     checkempName_txt.Text = dr[9].ToString();
                     checkPrice_txt.Text = dr[11].ToString();
-                    pictureBox4.ImageLocation = path + checkPic_lab.Text;
-
+                    //pictureBox4.ImageLocation = path + checkPic_lab.Text;
+                    pictureBox4.ImageLocation = Path.Combine(Application.StartupPath, relativePath, checkPic_lab.Text);
                 }
                 cn.Close();
 
@@ -873,7 +879,7 @@ namespace MaterialManagementSystem
         /// <param name="e"></param>
         private void checkPass_btn_Click(object sender, EventArgs e)
         {
-            if (checkCheckID_txt.Text!="")
+            if (checkCheckID_txt.Text != "")
             {
                 CheckList cklst = new CheckList()
                 {
@@ -1035,21 +1041,22 @@ namespace MaterialManagementSystem
         /// <param name="e"></param>
         private void EmpEdit_btn_Click(object sender, EventArgs e)
         {
-            if (EmpId_txt.Text!="")
+            if (EmpId_txt.Text != "")
             {
                 if (MessageBox.Show("確定要修改嗎?", "問題", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                { 
-                    Employee emp = new Employee() {
-                    EmployeeID = Convert.ToInt32(EmpId_txt.Text),
-                    Name = EmpName_txt.Text,
-                    Authority = EmpAuthority_cbx.Text
-                };
-                EmployeeUtility.EmployeeEdit(emp);
-                EmpId_txt.Text = "";
-                EmpName_txt.Text = "";
-                EmpAuthority_cbx.Text = "";
-                dataGridView6.DataSource = EmployeeUtility.GetAllEmployees();
-                dataGridView6.Refresh();
+                {
+                    Employee emp = new Employee()
+                    {
+                        EmployeeID = Convert.ToInt32(EmpId_txt.Text),
+                        Name = EmpName_txt.Text,
+                        Authority = EmpAuthority_cbx.Text
+                    };
+                    EmployeeUtility.EmployeeEdit(emp);
+                    EmpId_txt.Text = "";
+                    EmpName_txt.Text = "";
+                    EmpAuthority_cbx.Text = "";
+                    dataGridView6.DataSource = EmployeeUtility.GetAllEmployees();
+                    dataGridView6.Refresh();
                 }
             }
             else
@@ -1062,7 +1069,7 @@ namespace MaterialManagementSystem
 
         private void EmpDelete_btn_Click(object sender, EventArgs e)
         {
-            if (EmpId_txt.Text!="")
+            if (EmpId_txt.Text != "")
             {
                 if (MessageBox.Show("確定要刪除嗎?", "問題", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
@@ -1088,11 +1095,12 @@ namespace MaterialManagementSystem
         /// <param name="e"></param>
         private void EmpAdd_btn_Click(object sender, EventArgs e)
         {
-            if (EmpName_txt.Text != ""&&EmpAuthority_cbx.Text!="")
+            if (EmpName_txt.Text != "" && EmpAuthority_cbx.Text != "")
             {
                 if (MessageBox.Show("確定要新增嗎?", "問題", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    Employee emp = new Employee() {
+                    Employee emp = new Employee()
+                    {
                         Name = EmpName_txt.Text,
                         Authority = EmpAuthority_cbx.Text,
                         Password = "0000"
@@ -1111,6 +1119,34 @@ namespace MaterialManagementSystem
             }
         }
 
+        private void logoutbutton_Click(object sender, EventArgs e)
+        {
+            // 顯示確認對話框，讓使用者確認是否要登出
+            DialogResult result = MessageBox.Show("確定要登出嗎？", "登出", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
+            // 如果使用者選擇是，則執行登出操作
+            if (result == DialogResult.Yes)
+            {
+                // 清除登入資訊
+                LoginInfo.Name = "";
+
+                // 關閉目前的 Form
+                this.Close();
+
+                // 重新啟動應用程式
+                RestartApplication();
+            }
+        }
+        private void RestartApplication()
+        {
+            // 取得目前應用程式的路徑
+            string appPath = Application.ExecutablePath;
+
+            // 使用 Process.Start 方法啟動新的應用程式進程，並指定目前的應用程式路徑作為啟動引數
+            Process.Start(appPath);
+
+            // 關閉目前的應用程式進程
+            Environment.Exit(0);
+        }
     }
 }

@@ -30,17 +30,17 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.LoginUserName_lab = new System.Windows.Forms.Label();
@@ -52,6 +52,7 @@
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.newElementsPanel = new System.Windows.Forms.Panel();
+            this.newClearAll_btn = new System.Windows.Forms.Button();
             this.checkback_lab = new System.Windows.Forms.Label();
             this.checkback_btn = new System.Windows.Forms.Button();
             this.label29 = new System.Windows.Forms.Label();
@@ -221,7 +222,7 @@
             this.checkListTableAdapter = new MaterialManagementSystem.MaterialManagementSystemDataSet4TableAdapters.CheckListTableAdapter();
             this.checkListTableAdapter1 = new MaterialManagementSystem.MaterialManagementSystemDataSet5TableAdapters.CheckListTableAdapter();
             this.employeesTableAdapter = new MaterialManagementSystem.MaterialManagementSystemDataSet6TableAdapters.EmployeesTableAdapter();
-            this.newClearAll_btn = new System.Windows.Forms.Button();
+            this.logoutbutton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panelSideMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
@@ -275,6 +276,7 @@
             // panelSideMenu
             // 
             this.panelSideMenu.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panelSideMenu.Controls.Add(this.logoutbutton);
             this.panelSideMenu.Controls.Add(this.LoginUserName_lab);
             this.panelSideMenu.Controls.Add(this.EmployeeManagement_btn);
             this.panelSideMenu.Controls.Add(this.CheckListPanel_btn);
@@ -291,7 +293,7 @@
             // LoginUserName_lab
             // 
             this.LoginUserName_lab.AutoSize = true;
-            this.LoginUserName_lab.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.LoginUserName_lab.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.LoginUserName_lab.ForeColor = System.Drawing.Color.White;
             this.LoginUserName_lab.Location = new System.Drawing.Point(25, 628);
             this.LoginUserName_lab.Name = "LoginUserName_lab";
@@ -304,7 +306,7 @@
             this.EmployeeManagement_btn.Dock = System.Windows.Forms.DockStyle.Top;
             this.EmployeeManagement_btn.FlatAppearance.BorderSize = 0;
             this.EmployeeManagement_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EmployeeManagement_btn.Font = new System.Drawing.Font("Microsoft JhengHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.EmployeeManagement_btn.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.EmployeeManagement_btn.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.EmployeeManagement_btn.Location = new System.Drawing.Point(0, 280);
             this.EmployeeManagement_btn.Name = "EmployeeManagement_btn";
@@ -320,7 +322,7 @@
             this.CheckListPanel_btn.Dock = System.Windows.Forms.DockStyle.Top;
             this.CheckListPanel_btn.FlatAppearance.BorderSize = 0;
             this.CheckListPanel_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CheckListPanel_btn.Font = new System.Drawing.Font("Microsoft JhengHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.CheckListPanel_btn.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.CheckListPanel_btn.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.CheckListPanel_btn.Location = new System.Drawing.Point(0, 235);
             this.CheckListPanel_btn.Name = "CheckListPanel_btn";
@@ -336,7 +338,7 @@
             this.Newmaterials_btn.Dock = System.Windows.Forms.DockStyle.Top;
             this.Newmaterials_btn.FlatAppearance.BorderSize = 0;
             this.Newmaterials_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Newmaterials_btn.Font = new System.Drawing.Font("Microsoft JhengHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.Newmaterials_btn.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.Newmaterials_btn.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.Newmaterials_btn.Location = new System.Drawing.Point(0, 190);
             this.Newmaterials_btn.Name = "Newmaterials_btn";
@@ -352,7 +354,7 @@
             this.SupplierList_btn.Dock = System.Windows.Forms.DockStyle.Top;
             this.SupplierList_btn.FlatAppearance.BorderSize = 0;
             this.SupplierList_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SupplierList_btn.Font = new System.Drawing.Font("Microsoft JhengHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.SupplierList_btn.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.SupplierList_btn.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.SupplierList_btn.Location = new System.Drawing.Point(0, 145);
             this.SupplierList_btn.Name = "SupplierList_btn";
@@ -369,7 +371,7 @@
             this.SearchmaterialsMenu_btn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.SearchmaterialsMenu_btn.FlatAppearance.BorderSize = 0;
             this.SearchmaterialsMenu_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SearchmaterialsMenu_btn.Font = new System.Drawing.Font("Microsoft JhengHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.SearchmaterialsMenu_btn.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.SearchmaterialsMenu_btn.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.SearchmaterialsMenu_btn.Location = new System.Drawing.Point(0, 100);
             this.SearchmaterialsMenu_btn.Name = "SearchmaterialsMenu_btn";
@@ -441,6 +443,22 @@
             this.newElementsPanel.Size = new System.Drawing.Size(916, 598);
             this.newElementsPanel.TabIndex = 2;
             // 
+            // newClearAll_btn
+            // 
+            this.newClearAll_btn.BackColor = System.Drawing.Color.Orchid;
+            this.newClearAll_btn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.newClearAll_btn.FlatAppearance.BorderSize = 0;
+            this.newClearAll_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.newClearAll_btn.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.newClearAll_btn.ForeColor = System.Drawing.Color.White;
+            this.newClearAll_btn.Location = new System.Drawing.Point(272, 20);
+            this.newClearAll_btn.Name = "newClearAll_btn";
+            this.newClearAll_btn.Size = new System.Drawing.Size(63, 23);
+            this.newClearAll_btn.TabIndex = 55;
+            this.newClearAll_btn.Text = "清空";
+            this.newClearAll_btn.UseVisualStyleBackColor = false;
+            this.newClearAll_btn.Click += new System.EventHandler(this.newClearAll_btn_Click);
+            // 
             // checkback_lab
             // 
             this.checkback_lab.AutoSize = true;
@@ -456,7 +474,7 @@
             this.checkback_btn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.checkback_btn.FlatAppearance.BorderSize = 0;
             this.checkback_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkback_btn.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.checkback_btn.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.checkback_btn.ForeColor = System.Drawing.Color.White;
             this.checkback_btn.Location = new System.Drawing.Point(839, 538);
             this.checkback_btn.Name = "checkback_btn";
@@ -470,18 +488,18 @@
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label29.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label29.ForeColor = System.Drawing.Color.Red;
             this.label29.Location = new System.Drawing.Point(91, 76);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(147, 16);
+            this.label29.Size = new System.Drawing.Size(146, 16);
             this.label29.TabIndex = 52;
             this.label29.Text = "若為新購料件料件編號為0";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label15.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label15.Location = new System.Drawing.Point(12, 52);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(73, 20);
@@ -491,7 +509,7 @@
             // newOldMSID_txt
             // 
             this.newOldMSID_txt.BackColor = System.Drawing.Color.LightGray;
-            this.newOldMSID_txt.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.newOldMSID_txt.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.newOldMSID_txt.Location = new System.Drawing.Point(91, 51);
             this.newOldMSID_txt.Name = "newOldMSID_txt";
             this.newOldMSID_txt.ReadOnly = true;
@@ -501,7 +519,7 @@
             // newelement_cbx
             // 
             this.newelement_cbx.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.supplierElementsBindingSource, "SupplierID", true));
-            this.newelement_cbx.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.newelement_cbx.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.newelement_cbx.FormattingEnabled = true;
             this.newelement_cbx.Location = new System.Drawing.Point(91, 158);
             this.newelement_cbx.Name = "newelement_cbx";
@@ -522,7 +540,7 @@
             // 
             this.newSupplier_cbx.DataSource = this.suppliersBindingSource;
             this.newSupplier_cbx.DisplayMember = "CompanyName";
-            this.newSupplier_cbx.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.newSupplier_cbx.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.newSupplier_cbx.FormattingEnabled = true;
             this.newSupplier_cbx.Location = new System.Drawing.Point(91, 124);
             this.newSupplier_cbx.Name = "newSupplier_cbx";
@@ -544,7 +562,7 @@
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label28.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label28.Location = new System.Drawing.Point(271, 321);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(23, 20);
@@ -554,7 +572,7 @@
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label27.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label27.Location = new System.Drawing.Point(162, 321);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(16, 17);
@@ -564,7 +582,7 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label26.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label26.Location = new System.Drawing.Point(178, 318);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(25, 20);
@@ -574,7 +592,7 @@
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label25.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label25.Location = new System.Drawing.Point(44, 320);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(41, 20);
@@ -583,7 +601,7 @@
             // 
             // newTax_txt
             // 
-            this.newTax_txt.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.newTax_txt.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.newTax_txt.Location = new System.Drawing.Point(204, 318);
             this.newTax_txt.Name = "newTax_txt";
             this.newTax_txt.Size = new System.Drawing.Size(61, 23);
@@ -591,7 +609,7 @@
             // 
             // newPerPrice_txt
             // 
-            this.newPerPrice_txt.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.newPerPrice_txt.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.newPerPrice_txt.Location = new System.Drawing.Point(91, 318);
             this.newPerPrice_txt.Name = "newPerPrice_txt";
             this.newPerPrice_txt.Size = new System.Drawing.Size(61, 23);
@@ -600,7 +618,7 @@
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label24.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label24.Location = new System.Drawing.Point(44, 356);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(41, 20);
@@ -609,7 +627,7 @@
             // 
             // newTotalPrice_txt
             // 
-            this.newTotalPrice_txt.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.newTotalPrice_txt.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.newTotalPrice_txt.Location = new System.Drawing.Point(91, 356);
             this.newTotalPrice_txt.Name = "newTotalPrice_txt";
             this.newTotalPrice_txt.ReadOnly = true;
@@ -620,7 +638,7 @@
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label23.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label23.Location = new System.Drawing.Point(12, 20);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(73, 20);
@@ -630,7 +648,7 @@
             // CheckID_txt
             // 
             this.CheckID_txt.BackColor = System.Drawing.Color.LightGray;
-            this.CheckID_txt.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.CheckID_txt.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.CheckID_txt.Location = new System.Drawing.Point(91, 20);
             this.CheckID_txt.Name = "CheckID_txt";
             this.CheckID_txt.ReadOnly = true;
@@ -643,7 +661,7 @@
             this.SenttoCheck_btn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.SenttoCheck_btn.FlatAppearance.BorderSize = 0;
             this.SenttoCheck_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SenttoCheck_btn.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.SenttoCheck_btn.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.SenttoCheck_btn.ForeColor = System.Drawing.Color.White;
             this.SenttoCheck_btn.Location = new System.Drawing.Point(272, 539);
             this.SenttoCheck_btn.Name = "SenttoCheck_btn";
@@ -656,7 +674,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label20.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label20.Location = new System.Drawing.Point(28, 96);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(57, 20);
@@ -665,7 +683,7 @@
             // 
             // newEmpName_txt
             // 
-            this.newEmpName_txt.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.newEmpName_txt.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.newEmpName_txt.Location = new System.Drawing.Point(91, 92);
             this.newEmpName_txt.Name = "newEmpName_txt";
             this.newEmpName_txt.Size = new System.Drawing.Size(174, 23);
@@ -674,14 +692,14 @@
             // dataGridView4
             // 
             this.dataGridView4.AutoGenerateColumns = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView4.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle34.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle34.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle34.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView4.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle34;
             this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.checkIDDataGridViewTextBoxColumn,
@@ -693,14 +711,14 @@
             this.sentCheckTimeDataGridViewTextBoxColumn,
             this.priceDataGridViewTextBoxColumn});
             this.dataGridView4.DataSource = this.checkListBindingSource;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView4.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle35.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle35.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle35.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView4.DefaultCellStyle = dataGridViewCellStyle35;
             this.dataGridView4.Location = new System.Drawing.Point(341, 20);
             this.dataGridView4.Name = "dataGridView4";
             this.dataGridView4.RowTemplate.Height = 24;
@@ -776,7 +794,7 @@
             // 
             // newChosePic_btn
             // 
-            this.newChosePic_btn.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.newChosePic_btn.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.newChosePic_btn.Location = new System.Drawing.Point(190, 386);
             this.newChosePic_btn.Name = "newChosePic_btn";
             this.newChosePic_btn.Size = new System.Drawing.Size(75, 23);
@@ -797,7 +815,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label16.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label16.Location = new System.Drawing.Point(44, 415);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(41, 20);
@@ -807,7 +825,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label17.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label17.Location = new System.Drawing.Point(44, 260);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(41, 20);
@@ -816,7 +834,7 @@
             // 
             // newDescription_txt
             // 
-            this.newDescription_txt.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.newDescription_txt.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.newDescription_txt.Location = new System.Drawing.Point(91, 258);
             this.newDescription_txt.Multiline = true;
             this.newDescription_txt.Name = "newDescription_txt";
@@ -835,7 +853,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label18.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label18.Location = new System.Drawing.Point(44, 226);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(41, 20);
@@ -844,7 +862,7 @@
             // 
             // newQty_txt
             // 
-            this.newQty_txt.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.newQty_txt.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.newQty_txt.Location = new System.Drawing.Point(91, 225);
             this.newQty_txt.Name = "newQty_txt";
             this.newQty_txt.Size = new System.Drawing.Size(174, 23);
@@ -853,7 +871,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label19.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label19.Location = new System.Drawing.Point(44, 192);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(41, 20);
@@ -862,7 +880,7 @@
             // 
             // newConfig_txt
             // 
-            this.newConfig_txt.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.newConfig_txt.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.newConfig_txt.Location = new System.Drawing.Point(91, 192);
             this.newConfig_txt.Name = "newConfig_txt";
             this.newConfig_txt.Size = new System.Drawing.Size(174, 23);
@@ -871,7 +889,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label21.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label21.Location = new System.Drawing.Point(28, 124);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(57, 20);
@@ -881,7 +899,7 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label22.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label22.Location = new System.Drawing.Point(44, 158);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(41, 20);
@@ -929,7 +947,7 @@
             this.checkdenied_btn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.checkdenied_btn.FlatAppearance.BorderSize = 0;
             this.checkdenied_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkdenied_btn.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.checkdenied_btn.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.checkdenied_btn.ForeColor = System.Drawing.Color.White;
             this.checkdenied_btn.Location = new System.Drawing.Point(839, 547);
             this.checkdenied_btn.Name = "checkdenied_btn";
@@ -941,7 +959,7 @@
             // 
             // checkResult_txt
             // 
-            this.checkResult_txt.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.checkResult_txt.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.checkResult_txt.Location = new System.Drawing.Point(659, 363);
             this.checkResult_txt.Name = "checkResult_txt";
             this.checkResult_txt.ReadOnly = true;
@@ -960,7 +978,7 @@
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label32.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label32.Location = new System.Drawing.Point(580, 365);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(73, 20);
@@ -969,7 +987,7 @@
             // 
             // checkSupplier_txt
             // 
-            this.checkSupplier_txt.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.checkSupplier_txt.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.checkSupplier_txt.Location = new System.Drawing.Point(659, 127);
             this.checkSupplier_txt.Name = "checkSupplier_txt";
             this.checkSupplier_txt.ReadOnly = true;
@@ -978,7 +996,7 @@
             // 
             // checkComponent_txt
             // 
-            this.checkComponent_txt.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.checkComponent_txt.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.checkComponent_txt.Location = new System.Drawing.Point(659, 161);
             this.checkComponent_txt.Name = "checkComponent_txt";
             this.checkComponent_txt.ReadOnly = true;
@@ -988,14 +1006,14 @@
             // dataGridView5
             // 
             this.dataGridView5.AutoGenerateColumns = false;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView5.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle36.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle36.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle36.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView5.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle36;
             this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.checkIDDataGridViewTextBoxColumn1,
@@ -1005,14 +1023,14 @@
             this.qtyDataGridViewTextBoxColumn2,
             this.priceDataGridViewTextBoxColumn1});
             this.dataGridView5.DataSource = this.checkListBindingSource1;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView5.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle37.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle37.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle37.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle37.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle37.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle37.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView5.DefaultCellStyle = dataGridViewCellStyle37;
             this.dataGridView5.Location = new System.Drawing.Point(16, 25);
             this.dataGridView5.Name = "dataGridView5";
             this.dataGridView5.RowTemplate.Height = 24;
@@ -1070,18 +1088,18 @@
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label30.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label30.ForeColor = System.Drawing.Color.Red;
             this.label30.Location = new System.Drawing.Point(658, 80);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(147, 16);
+            this.label30.Size = new System.Drawing.Size(146, 16);
             this.label30.TabIndex = 81;
             this.label30.Text = "若為新購料件料件編號為0";
             // 
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label31.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label31.Location = new System.Drawing.Point(580, 57);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(73, 20);
@@ -1091,7 +1109,7 @@
             // checkMSID_txt
             // 
             this.checkMSID_txt.BackColor = System.Drawing.Color.LightGray;
-            this.checkMSID_txt.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.checkMSID_txt.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.checkMSID_txt.Location = new System.Drawing.Point(659, 56);
             this.checkMSID_txt.Name = "checkMSID_txt";
             this.checkMSID_txt.ReadOnly = true;
@@ -1102,7 +1120,7 @@
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label36.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label36.Location = new System.Drawing.Point(612, 328);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(41, 20);
@@ -1111,7 +1129,7 @@
             // 
             // checkPrice_txt
             // 
-            this.checkPrice_txt.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.checkPrice_txt.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.checkPrice_txt.Location = new System.Drawing.Point(659, 328);
             this.checkPrice_txt.Name = "checkPrice_txt";
             this.checkPrice_txt.ReadOnly = true;
@@ -1121,7 +1139,7 @@
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label37.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label37.Location = new System.Drawing.Point(580, 25);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(73, 20);
@@ -1131,7 +1149,7 @@
             // checkCheckID_txt
             // 
             this.checkCheckID_txt.BackColor = System.Drawing.Color.LightGray;
-            this.checkCheckID_txt.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.checkCheckID_txt.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.checkCheckID_txt.Location = new System.Drawing.Point(659, 25);
             this.checkCheckID_txt.Name = "checkCheckID_txt";
             this.checkCheckID_txt.ReadOnly = true;
@@ -1144,7 +1162,7 @@
             this.checkPass_btn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.checkPass_btn.FlatAppearance.BorderSize = 0;
             this.checkPass_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkPass_btn.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.checkPass_btn.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.checkPass_btn.ForeColor = System.Drawing.Color.White;
             this.checkPass_btn.Location = new System.Drawing.Point(839, 509);
             this.checkPass_btn.Name = "checkPass_btn";
@@ -1157,7 +1175,7 @@
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label38.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label38.Location = new System.Drawing.Point(596, 101);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(57, 20);
@@ -1166,7 +1184,7 @@
             // 
             // checkempName_txt
             // 
-            this.checkempName_txt.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.checkempName_txt.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.checkempName_txt.Location = new System.Drawing.Point(659, 97);
             this.checkempName_txt.Name = "checkempName_txt";
             this.checkempName_txt.ReadOnly = true;
@@ -1176,7 +1194,7 @@
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label39.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label39.Location = new System.Drawing.Point(612, 420);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(41, 20);
@@ -1186,7 +1204,7 @@
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label40.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label40.Location = new System.Drawing.Point(612, 265);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(41, 20);
@@ -1195,7 +1213,7 @@
             // 
             // checkDescription_txt
             // 
-            this.checkDescription_txt.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.checkDescription_txt.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.checkDescription_txt.Location = new System.Drawing.Point(659, 263);
             this.checkDescription_txt.Multiline = true;
             this.checkDescription_txt.Name = "checkDescription_txt";
@@ -1215,7 +1233,7 @@
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label41.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label41.Location = new System.Drawing.Point(612, 231);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(41, 20);
@@ -1224,7 +1242,7 @@
             // 
             // checkQty_txt
             // 
-            this.checkQty_txt.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.checkQty_txt.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.checkQty_txt.Location = new System.Drawing.Point(659, 230);
             this.checkQty_txt.Name = "checkQty_txt";
             this.checkQty_txt.ReadOnly = true;
@@ -1234,7 +1252,7 @@
             // label42
             // 
             this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label42.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label42.Location = new System.Drawing.Point(612, 197);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(41, 20);
@@ -1243,7 +1261,7 @@
             // 
             // checkConfig_txt
             // 
-            this.checkConfig_txt.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.checkConfig_txt.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.checkConfig_txt.Location = new System.Drawing.Point(659, 197);
             this.checkConfig_txt.Name = "checkConfig_txt";
             this.checkConfig_txt.ReadOnly = true;
@@ -1253,7 +1271,7 @@
             // label43
             // 
             this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label43.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label43.Location = new System.Drawing.Point(596, 129);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(57, 20);
@@ -1263,7 +1281,7 @@
             // label44
             // 
             this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label44.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label44.Location = new System.Drawing.Point(612, 163);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(41, 20);
@@ -1294,7 +1312,7 @@
             this.EmpAdd_btn.BackColor = System.Drawing.Color.SteelBlue;
             this.EmpAdd_btn.FlatAppearance.BorderSize = 0;
             this.EmpAdd_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EmpAdd_btn.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.EmpAdd_btn.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.EmpAdd_btn.ForeColor = System.Drawing.Color.White;
             this.EmpAdd_btn.Location = new System.Drawing.Point(382, 539);
             this.EmpAdd_btn.Name = "EmpAdd_btn";
@@ -1309,7 +1327,7 @@
             this.EmpDelete_btn.BackColor = System.Drawing.Color.Crimson;
             this.EmpDelete_btn.FlatAppearance.BorderSize = 0;
             this.EmpDelete_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EmpDelete_btn.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.EmpDelete_btn.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.EmpDelete_btn.ForeColor = System.Drawing.Color.White;
             this.EmpDelete_btn.Location = new System.Drawing.Point(794, 537);
             this.EmpDelete_btn.Name = "EmpDelete_btn";
@@ -1324,7 +1342,7 @@
             this.EmpEdit_btn.BackColor = System.Drawing.Color.DarkTurquoise;
             this.EmpEdit_btn.FlatAppearance.BorderSize = 0;
             this.EmpEdit_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EmpEdit_btn.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.EmpEdit_btn.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.EmpEdit_btn.ForeColor = System.Drawing.Color.White;
             this.EmpEdit_btn.Location = new System.Drawing.Point(700, 537);
             this.EmpEdit_btn.Name = "EmpEdit_btn";
@@ -1336,7 +1354,7 @@
             // 
             // EmpAuthority_cbx
             // 
-            this.EmpAuthority_cbx.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.EmpAuthority_cbx.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.EmpAuthority_cbx.FormattingEnabled = true;
             this.EmpAuthority_cbx.Items.AddRange(new object[] {
             "管理",
@@ -1349,7 +1367,7 @@
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label35.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label35.Location = new System.Drawing.Point(411, 114);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(41, 20);
@@ -1359,7 +1377,7 @@
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label34.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label34.Location = new System.Drawing.Point(411, 75);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(41, 20);
@@ -1369,7 +1387,7 @@
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label33.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label33.Location = new System.Drawing.Point(379, 34);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(73, 20);
@@ -1378,7 +1396,7 @@
             // 
             // EmpName_txt
             // 
-            this.EmpName_txt.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.EmpName_txt.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.EmpName_txt.Location = new System.Drawing.Point(456, 70);
             this.EmpName_txt.Name = "EmpName_txt";
             this.EmpName_txt.Size = new System.Drawing.Size(192, 23);
@@ -1386,7 +1404,7 @@
             // 
             // EmpId_txt
             // 
-            this.EmpId_txt.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.EmpId_txt.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.EmpId_txt.Location = new System.Drawing.Point(457, 33);
             this.EmpId_txt.Name = "EmpId_txt";
             this.EmpId_txt.ReadOnly = true;
@@ -1396,31 +1414,31 @@
             // dataGridView6
             // 
             this.dataGridView6.AutoGenerateColumns = false;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView6.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle38.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle38.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle38.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle38.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle38.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView6.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle38;
             this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView6.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.employeeIDDataGridViewTextBoxColumn,
             this.nameDataGridViewTextBoxColumn,
             this.authorityDataGridViewTextBoxColumn});
             this.dataGridView6.DataSource = this.employeesBindingSource;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView6.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle39.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle39.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle39.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle39.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle39.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle39.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView6.DefaultCellStyle = dataGridViewCellStyle39;
             this.dataGridView6.Location = new System.Drawing.Point(15, 31);
             this.dataGridView6.Name = "dataGridView6";
-            this.dataGridView6.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.dataGridView6.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.dataGridView6.RowTemplate.Height = 24;
             this.dataGridView6.Size = new System.Drawing.Size(328, 534);
             this.dataGridView6.TabIndex = 0;
@@ -1510,7 +1528,7 @@
             this.newSupplier_btn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.newSupplier_btn.FlatAppearance.BorderSize = 0;
             this.newSupplier_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.newSupplier_btn.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.newSupplier_btn.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.newSupplier_btn.ForeColor = System.Drawing.Color.White;
             this.newSupplier_btn.Location = new System.Drawing.Point(415, 248);
             this.newSupplier_btn.Name = "newSupplier_btn";
@@ -1527,7 +1545,7 @@
             this.OpenEdit_btn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.OpenEdit_btn.FlatAppearance.BorderSize = 0;
             this.OpenEdit_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.OpenEdit_btn.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.OpenEdit_btn.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.OpenEdit_btn.ForeColor = System.Drawing.Color.White;
             this.OpenEdit_btn.Location = new System.Drawing.Point(772, 248);
             this.OpenEdit_btn.Name = "OpenEdit_btn";
@@ -1565,7 +1583,7 @@
             // 
             // textBox6
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.textBox6.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.textBox6.Location = new System.Drawing.Point(686, 329);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(95, 23);
@@ -1574,7 +1592,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label14.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label14.Location = new System.Drawing.Point(411, 298);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(73, 20);
@@ -1587,7 +1605,7 @@
             this.supplierelmtnew_btn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.supplierelmtnew_btn.FlatAppearance.BorderSize = 0;
             this.supplierelmtnew_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.supplierelmtnew_btn.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.supplierelmtnew_btn.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.supplierelmtnew_btn.ForeColor = System.Drawing.Color.White;
             this.supplierelmtnew_btn.Location = new System.Drawing.Point(783, 329);
             this.supplierelmtnew_btn.Name = "supplierelmtnew_btn";
@@ -1603,7 +1621,7 @@
             this.supplierelmtdelete_btn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.supplierelmtdelete_btn.FlatAppearance.BorderSize = 0;
             this.supplierelmtdelete_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.supplierelmtdelete_btn.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.supplierelmtdelete_btn.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.supplierelmtdelete_btn.ForeColor = System.Drawing.Color.White;
             this.supplierelmtdelete_btn.Location = new System.Drawing.Point(686, 541);
             this.supplierelmtdelete_btn.Name = "supplierelmtdelete_btn";
@@ -1619,7 +1637,7 @@
             this.supplierinfodelete_btn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.supplierinfodelete_btn.FlatAppearance.BorderSize = 0;
             this.supplierinfodelete_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.supplierinfodelete_btn.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.supplierinfodelete_btn.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.supplierinfodelete_btn.ForeColor = System.Drawing.Color.White;
             this.supplierinfodelete_btn.Location = new System.Drawing.Point(841, 248);
             this.supplierinfodelete_btn.Name = "supplierinfodelete_btn";
@@ -1635,7 +1653,7 @@
             this.supplierinfoedit_btn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.supplierinfoedit_btn.FlatAppearance.BorderSize = 0;
             this.supplierinfoedit_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.supplierinfoedit_btn.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.supplierinfoedit_btn.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.supplierinfoedit_btn.ForeColor = System.Drawing.Color.White;
             this.supplierinfoedit_btn.Location = new System.Drawing.Point(701, 248);
             this.supplierinfoedit_btn.Name = "supplierinfoedit_btn";
@@ -1649,7 +1667,7 @@
             // textBox4
             // 
             this.textBox4.BackColor = System.Drawing.Color.LightGray;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.textBox4.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.textBox4.Location = new System.Drawing.Point(490, 160);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
@@ -1658,23 +1676,23 @@
             // 
             // dataGridView3
             // 
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle40.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle40.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle40.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle40.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle40.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle40.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle40;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView3.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle41.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle41.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle41.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle41.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle41.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle41.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView3.DefaultCellStyle = dataGridViewCellStyle41;
             this.dataGridView3.Location = new System.Drawing.Point(415, 329);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.RowTemplate.Height = 24;
@@ -1685,7 +1703,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label13.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label13.Location = new System.Drawing.Point(411, 197);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(73, 20);
@@ -1695,7 +1713,7 @@
             // textBox5
             // 
             this.textBox5.BackColor = System.Drawing.Color.LightGray;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.textBox5.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.textBox5.Location = new System.Drawing.Point(490, 197);
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
@@ -1705,7 +1723,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label12.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label12.Location = new System.Drawing.Point(411, 160);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(73, 20);
@@ -1715,7 +1733,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label9.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label9.Location = new System.Drawing.Point(427, 123);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(57, 20);
@@ -1725,7 +1743,7 @@
             // textBox3
             // 
             this.textBox3.BackColor = System.Drawing.Color.LightGray;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.textBox3.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.textBox3.Location = new System.Drawing.Point(490, 123);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
@@ -1735,7 +1753,7 @@
             // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.Color.LightGray;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.textBox2.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.textBox2.Location = new System.Drawing.Point(490, 86);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
@@ -1745,7 +1763,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label11.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label11.Location = new System.Drawing.Point(411, 86);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(73, 20);
@@ -1755,7 +1773,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label10.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label10.Location = new System.Drawing.Point(411, 49);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(73, 20);
@@ -1765,7 +1783,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label8.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label8.Location = new System.Drawing.Point(12, 23);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(57, 20);
@@ -1775,7 +1793,7 @@
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.LightGray;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.textBox1.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.textBox1.Location = new System.Drawing.Point(490, 49);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
@@ -1785,14 +1803,14 @@
             // dataGridView2
             // 
             this.dataGridView2.AutoGenerateColumns = false;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle42.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle42.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle42.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle42.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle42.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle42.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle42;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.supplierIDDataGridViewTextBoxColumn,
@@ -1800,7 +1818,7 @@
             this.dataGridView2.DataSource = this.suppliersBindingSource;
             this.dataGridView2.Location = new System.Drawing.Point(16, 50);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.dataGridView2.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.dataGridView2.RowTemplate.Height = 24;
             this.dataGridView2.Size = new System.Drawing.Size(343, 515);
             this.dataGridView2.TabIndex = 0;
@@ -1825,7 +1843,7 @@
             this.CancelEdit_btn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.CancelEdit_btn.FlatAppearance.BorderSize = 0;
             this.CancelEdit_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CancelEdit_btn.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.CancelEdit_btn.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.CancelEdit_btn.ForeColor = System.Drawing.Color.White;
             this.CancelEdit_btn.Location = new System.Drawing.Point(772, 248);
             this.CancelEdit_btn.Name = "CancelEdit_btn";
@@ -1868,7 +1886,7 @@
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.button2.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.button2.Location = new System.Drawing.Point(827, 330);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
@@ -1889,7 +1907,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label7.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label7.Location = new System.Drawing.Point(686, 330);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(41, 20);
@@ -1899,7 +1917,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label6.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label6.Location = new System.Drawing.Point(711, 265);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(41, 20);
@@ -1908,7 +1926,7 @@
             // 
             // description_txt
             // 
-            this.description_txt.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.description_txt.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.description_txt.Location = new System.Drawing.Point(758, 265);
             this.description_txt.Multiline = true;
             this.description_txt.Name = "description_txt";
@@ -1928,14 +1946,14 @@
             // 
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle43.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle43.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle43.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle43.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle43.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle43.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle43;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.mSIDDataGridViewTextBoxColumn,
@@ -1945,14 +1963,14 @@
             this.qtyDataGridViewTextBoxColumn,
             this.lasteditdateDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.elementsBindingSource;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle44.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle44.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle44.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle44.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle44.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle44.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle44;
             this.dataGridView1.Location = new System.Drawing.Point(16, 66);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
@@ -2013,7 +2031,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label5.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label5.Location = new System.Drawing.Point(711, 226);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(41, 20);
@@ -2026,7 +2044,7 @@
             this.Search_btn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.Search_btn.FlatAppearance.BorderSize = 0;
             this.Search_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Search_btn.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.Search_btn.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.Search_btn.ForeColor = System.Drawing.Color.White;
             this.Search_btn.Location = new System.Drawing.Point(252, 17);
             this.Search_btn.Name = "Search_btn";
@@ -2038,7 +2056,7 @@
             // 
             // qty_txt
             // 
-            this.qty_txt.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.qty_txt.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.qty_txt.Location = new System.Drawing.Point(758, 226);
             this.qty_txt.Name = "qty_txt";
             this.qty_txt.Size = new System.Drawing.Size(144, 23);
@@ -2046,7 +2064,7 @@
             // 
             // searchbox_txt
             // 
-            this.searchbox_txt.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.searchbox_txt.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.searchbox_txt.Location = new System.Drawing.Point(16, 18);
             this.searchbox_txt.Name = "searchbox_txt";
             this.searchbox_txt.Size = new System.Drawing.Size(230, 29);
@@ -2055,7 +2073,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label4.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label4.Location = new System.Drawing.Point(711, 148);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(41, 20);
@@ -2064,7 +2082,7 @@
             // 
             // id_txt
             // 
-            this.id_txt.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.id_txt.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.id_txt.Location = new System.Drawing.Point(758, 70);
             this.id_txt.Name = "id_txt";
             this.id_txt.ReadOnly = true;
@@ -2073,7 +2091,7 @@
             // 
             // config_txt
             // 
-            this.config_txt.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.config_txt.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.config_txt.Location = new System.Drawing.Point(758, 148);
             this.config_txt.Name = "config_txt";
             this.config_txt.Size = new System.Drawing.Size(144, 23);
@@ -2082,7 +2100,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label1.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label1.Location = new System.Drawing.Point(679, 70);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(73, 20);
@@ -2092,7 +2110,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label3.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label3.Location = new System.Drawing.Point(695, 186);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(57, 20);
@@ -2102,7 +2120,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label2.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label2.Location = new System.Drawing.Point(711, 109);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 20);
@@ -2111,7 +2129,7 @@
             // 
             // supplier_txt
             // 
-            this.supplier_txt.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.supplier_txt.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.supplier_txt.Location = new System.Drawing.Point(758, 186);
             this.supplier_txt.Name = "supplier_txt";
             this.supplier_txt.Size = new System.Drawing.Size(144, 23);
@@ -2119,7 +2137,7 @@
             // 
             // component_txt
             // 
-            this.component_txt.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.component_txt.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.component_txt.Location = new System.Drawing.Point(758, 109);
             this.component_txt.Name = "component_txt";
             this.component_txt.Size = new System.Drawing.Size(144, 23);
@@ -2131,7 +2149,7 @@
             this.Replenishment_btn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.Replenishment_btn.FlatAppearance.BorderSize = 0;
             this.Replenishment_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Replenishment_btn.Font = new System.Drawing.Font("Microsoft JhengHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.Replenishment_btn.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.Replenishment_btn.ForeColor = System.Drawing.Color.White;
             this.Replenishment_btn.Location = new System.Drawing.Point(681, 555);
             this.Replenishment_btn.Name = "Replenishment_btn";
@@ -2147,7 +2165,7 @@
             this.delete_btn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.delete_btn.FlatAppearance.BorderSize = 0;
             this.delete_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.delete_btn.Font = new System.Drawing.Font("Microsoft JhengHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.delete_btn.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.delete_btn.ForeColor = System.Drawing.Color.White;
             this.delete_btn.Location = new System.Drawing.Point(837, 555);
             this.delete_btn.Name = "delete_btn";
@@ -2163,7 +2181,7 @@
             this.edit_btn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.edit_btn.FlatAppearance.BorderSize = 0;
             this.edit_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.edit_btn.Font = new System.Drawing.Font("Microsoft JhengHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.edit_btn.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.edit_btn.ForeColor = System.Drawing.Color.White;
             this.edit_btn.Location = new System.Drawing.Point(759, 555);
             this.edit_btn.Name = "edit_btn";
@@ -2215,21 +2233,19 @@
             // 
             this.employeesTableAdapter.ClearBeforeFill = true;
             // 
-            // newClearAll_btn
+            // logoutbutton
             // 
-            this.newClearAll_btn.BackColor = System.Drawing.Color.Orchid;
-            this.newClearAll_btn.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.newClearAll_btn.FlatAppearance.BorderSize = 0;
-            this.newClearAll_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.newClearAll_btn.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.newClearAll_btn.ForeColor = System.Drawing.Color.White;
-            this.newClearAll_btn.Location = new System.Drawing.Point(272, 20);
-            this.newClearAll_btn.Name = "newClearAll_btn";
-            this.newClearAll_btn.Size = new System.Drawing.Size(63, 23);
-            this.newClearAll_btn.TabIndex = 55;
-            this.newClearAll_btn.Text = "清空";
-            this.newClearAll_btn.UseVisualStyleBackColor = false;
-            this.newClearAll_btn.Click += new System.EventHandler(this.newClearAll_btn_Click);
+            this.logoutbutton.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.logoutbutton.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.logoutbutton.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.logoutbutton.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.logoutbutton.Location = new System.Drawing.Point(172, 629);
+            this.logoutbutton.Name = "logoutbutton";
+            this.logoutbutton.Size = new System.Drawing.Size(75, 23);
+            this.logoutbutton.TabIndex = 22;
+            this.logoutbutton.Text = "登出";
+            this.logoutbutton.UseVisualStyleBackColor = false;
+            this.logoutbutton.Click += new System.EventHandler(this.logoutbutton_Click);
             // 
             // Form1
             // 
@@ -2465,6 +2481,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn1;
         private System.Windows.Forms.Label LoginUserName_lab;
         private System.Windows.Forms.Button newClearAll_btn;
+        private System.Windows.Forms.Button logoutbutton;
     }
 }
 

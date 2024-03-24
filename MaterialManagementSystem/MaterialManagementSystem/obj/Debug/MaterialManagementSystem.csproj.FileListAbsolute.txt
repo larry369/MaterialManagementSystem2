@@ -19,3 +19,14 @@ D:\Larrys file\programing\WindowsForm\MaterialManagementSystem2\MaterialManageme
 D:\Larrys file\programing\WindowsForm\MaterialManagementSystem2\MaterialManagementSystem\MaterialManagementSystem\obj\Debug\MaterialManagementSystem.exe
 D:\Larrys file\programing\WindowsForm\MaterialManagementSystem2\MaterialManagementSystem\MaterialManagementSystem\obj\Debug\MaterialManagementSystem.pdb
 D:\Larrys file\programing\WindowsForm\MaterialManagementSystem2\MaterialManagementSystem\MaterialManagementSystem\obj\Debug\MaterialManagementSystem.LoginForm.resources
+D:\LaiLai\程式\2.開發區\WindowsForm\MaterialManagementSystem2\MaterialManagementSystem\MaterialManagementSystem\bin\Debug\MaterialManagementSystem.exe.config
+D:\LaiLai\程式\2.開發區\WindowsForm\MaterialManagementSystem2\MaterialManagementSystem\MaterialManagementSystem\bin\Debug\MaterialManagementSystem.exe
+D:\LaiLai\程式\2.開發區\WindowsForm\MaterialManagementSystem2\MaterialManagementSystem\MaterialManagementSystem\bin\Debug\MaterialManagementSystem.pdb
+D:\LaiLai\程式\2.開發區\WindowsForm\MaterialManagementSystem2\MaterialManagementSystem\MaterialManagementSystem\obj\Debug\MaterialManagementSystem.csproj.AssemblyReference.cache
+D:\LaiLai\程式\2.開發區\WindowsForm\MaterialManagementSystem2\MaterialManagementSystem\MaterialManagementSystem\obj\Debug\MaterialManagementSystem.Form1.resources
+D:\LaiLai\程式\2.開發區\WindowsForm\MaterialManagementSystem2\MaterialManagementSystem\MaterialManagementSystem\obj\Debug\MaterialManagementSystem.LoginForm.resources
+D:\LaiLai\程式\2.開發區\WindowsForm\MaterialManagementSystem2\MaterialManagementSystem\MaterialManagementSystem\obj\Debug\MaterialManagementSystem.Properties.Resources.resources
+D:\LaiLai\程式\2.開發區\WindowsForm\MaterialManagementSystem2\MaterialManagementSystem\MaterialManagementSystem\obj\Debug\MaterialManagementSystem.csproj.GenerateResource.cache
+D:\LaiLai\程式\2.開發區\WindowsForm\MaterialManagementSystem2\MaterialManagementSystem\MaterialManagementSystem\obj\Debug\MaterialManagementSystem.csproj.CoreCompileInputs.cache
+D:\LaiLai\程式\2.開發區\WindowsForm\MaterialManagementSystem2\MaterialManagementSystem\MaterialManagementSystem\obj\Debug\MaterialManagementSystem.exe
+D:\LaiLai\程式\2.開發區\WindowsForm\MaterialManagementSystem2\MaterialManagementSystem\MaterialManagementSystem\obj\Debug\MaterialManagementSystem.pdb
